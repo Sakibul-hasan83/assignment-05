@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Nav bar Starts Here -->
+    <header class="bg-amber-50 py-4 shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Left Section -->
+        <a href="index.html">
+          <button
+            class="bg-lime-300 text-black py-2 px-4 rounded-lg hover:bg-lime-400 transition"
+          >
+            Home
+          </button></a
+        >
+
+        <!-- Middle Section-->
+        <div class="flex items-center space-x-2">
+          <img src="assets/logo.png" alt="Donate Icon" class="w-8 h-8" />
+          <!-- Replace with actual image source -->
+          <span class="text-lg font-semibold text-gray-800">
+            Donate Bangladesh
+          </span>
+        </div>
+
+        <!-- Right Section-->
+        <div class="flex items-center space-x-2">
+          <img src="assets/coin.png" alt="Coin Icon" class="w-6 h-6" />
+          <span id="totalBalance" class="text-lg font-semibold text-gray-800">
+            5500</span
+          >
+          <span class="text-lg font-semibold text-gray-800"> BDT</span>
+        </div>
+      </div>
+    </header>
+    <!-- Nav bar Ends here -->
+    <!-- Main Section Starts Here -->
+    <main class="container mx-auto">
+      <!-- Heading -->
+      <h3 class="font-bold text-4xl my-10">Important FAQ</h3>
+      <!-- Arrow Cards 1 -->
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border mb-4"
+      >
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a document (like an HTML
+            or XML file) as a tree of objects, allowing developers to access and
+            manipulate the content, structure, and style of a webpage.
+          </p>
+        </div>
+      </div>
+      <!-- Arrow Cards 1 Ends Here -->
+      <!-- Arrow Cards 2 Starts Here -->
+      <div
+      tabindex="0"
+      class="collapse collapse-arrow border-base-300 bg-base-200 border mb-4"
+    >
+      <div class="collapse-title text-xl font-medium">
+        How do you select an element from the DOM?
+      </div>
+      <div class="collapse-content">
+        <p>
+          You can select an element from the DOM using methods such as
+          `getElementById()`, `getElementsByClassName()`, `querySelector()`,
+          or `querySelectorAll()`.
+        </p>
+      </div>
+    </div>
+      <!-- Arrow Cards 2 Ends Here -->
+      <!-- Arrow Cards 3 Starts Here -->
+      <div
+      tabindex="0"
+      class="collapse collapse-arrow border-base-300 bg-base-200 border mb-4"
+    >
+      <div class="collapse-title text-xl font-medium">
+        What is event delegation in the context of the DOM, and why is it
+        useful?
+      </div>
+      <div class="collapse-content">
+        <p>
+          Event delegation allows you to add a single event listener to a
+          parent element instead of adding multiple listeners to each child
+          element. This is useful for handling events efficiently and when
+          elements are dynamically added or removed.
+        </p>
+      </div>
+    </div>
+      <!-- Arrow Cards 3 Ends Here -->
+      <!-- Arrow Cards 4 Starts Here -->
+       <div
+        tabindex="0"
+        class="collapse collapse-arrow border-base-300 bg-base-200 border mb-4"
+      >
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attributes and styles using the
+          DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can manipulate an element's attributes using `setAttribute()`,
+            `getAttribute()`, or `removeAttribute()`. To manipulate styles, you
+            can modify the element's `style` property directly in JavaScript.
+          </p>
+        </div>
+      </div>
+      <!-- Arrow Cards 4 Ends Here -->
+    </main>
+    <!-- Main Section Ends Here -->
+
+    <!-- daisyUI Script If needed -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js"
+      defer
+    ></script>
+  </body>
+</html>
